@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center_horizontal"
+        android:text="MyWeatherApp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096">
+
+
+    </TextView>
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="106dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="208dp"
+        android:backgroundTint="@color/black"
+
+        android:gravity="center_horizontal"
+        android:text="Temp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <TextView
+
+
+        android:layout_width="106dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="208dp"
+        android:backgroundTint="@color/black"
+
+        android:gravity="center_horizontal"
+        android:text="Humidity"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="504dp"
+        android:inputType="textPersonName"
+       android:hint="Enter Your City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/citys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/hum"
+        android:layout_width="104dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/wether"
+        android:layout_width="104dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:text="Button"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
